@@ -6,7 +6,7 @@
     <title>The Hair Lab | Hair Salon</title>
     <link rel="stylesheet" href="src/output.css" />
   </head>
-  <body class="border-black bg-white">
+  <body class="bg-white">
     <!-- Fixed Header -->
     <header class="fixed top-0 left-0 z-30 w-full bg-black text-white">
       <div
@@ -65,6 +65,7 @@
           src="public/hero-img.jpg"
           alt="black and gray blonde hair model"
           class="absolute inset-0 h-full w-full object-cover"
+          loading="lazy"
         />
 
         <!-- Text Content -->
@@ -77,24 +78,27 @@
       </section>
 
       <!-- About Us Section -->
-      <section
-        id="about"
-        class="relative border-b border-black bg-white px-4 py-16"
-      >
-        <img
-          src="public/about-img.jpg"
-          alt="blue brush stroke"
-          class="absolute inset-0 z-10 h-full w-full object-contain"
-        />
+      <section id="about" class="relative my-10 bg-white px-4 py-16">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-10 flex items-center justify-center">
+          <img
+            src="public/about-img.jpg"
+            alt="blue brush stroke"
+            class="h-full w-full object-cover opacity-30"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- Content -->
         <div
-          class="relative z-20 mx-auto max-w-3xl rounded-2xl bg-white/70 p-7 text-center"
+          class="relative z-20 mx-auto max-w-3xl rounded-2xl bg-white/50 p-7 text-center"
         >
           <h2 class="border py-4 text-3xl font-light uppercase">About Us</h2>
-          <p class="relative z-20 mt-10 text-lg leading-relaxed">
-            <span class="mb-3 block italic"
-              >Founded in 2014, we’ve been providing top-tier hair care services
-              to countless satisfied customers.</span
-            >
+          <p class="relative mt-10 text-lg leading-relaxed">
+            <span class="mb-3 block italic">
+              Founded in 2014, we’ve been providing top-tier hair care services
+              to countless satisfied customers.
+            </span>
             <span class="mb-3 block">
               Our expertise lies in
               <span class="font-semibold text-blue-400 italic"
@@ -102,13 +106,14 @@
               >
               and maintaining fabulous, long-lasting results. We’ve crafted a
               unique formula that combines quality products and skilled artistry
-              to ensure your hair always looks and feels its best.</span
-            >
+              to ensure your hair always looks and feels its best.
+            </span>
             Whether you’re looking for a
             <span
               class="animate-wave relative bg-gradient-to-r from-teal-200 via-teal-400 to-teal-600/30 bg-clip-text font-semibold text-transparent italic"
-              >fresh new look</span
             >
+              fresh new look
+            </span>
             or maintenance of your current style, we’re here to bring your
             vision to life.
           </p>
@@ -118,13 +123,17 @@
       <!-- banner -->
       <section
         id="quote"
-        class="relative flex items-center justify-center py-10"
+        class="relative my-10 flex items-center justify-center px-4 py-10"
       >
-        <img src="public/banner-1.jpg" class="absolute inset-0 object-cover" />
+        <img
+          src="public/banner-1.jpg"
+          class="absolute inset-0 h-full w-full object-cover"
+          loading="lazy"
+        />
         <!-- Dark Overlay -->
         <div class="absolute inset-0 bg-black/40"></div>
         <div
-          class="relative flex max-w-4xl items-center justify-center space-x-5 p-5 text-white"
+          class="relative flex max-w-3xl items-center justify-center space-x-5 p-5 text-white"
         >
           <div class="flex flex-col border-2 p-2">
             <p class="italic">
@@ -151,8 +160,8 @@
         id="services"
         class="relative border-b border-gray-300 bg-white px-4 py-16 text-black"
       >
-        <div class="mx-auto max-w-4xl text-center">
-          <h2 class="text-3xl font-light tracking-wide uppercase">
+        <div class="mx-auto max-w-3xl text-center">
+          <h2 class="border py-4 text-3xl font-light tracking-wide uppercase">
             Our Services
           </h2>
           <div class="mt-10 max-w-4xl space-y-4">
@@ -221,17 +230,54 @@
       </section>
 
       <!-- Gallery Section -->
-      <section id="gallery" class="border-b border-black bg-white px-4 py-16">
-        <div class="mx-auto max-w-7xl text-center">
-          <h2 class="text-3xl font-bold text-green-500">Gallery</h2>
-          <p>Check out some of our latest styles!</p>
+      <section
+        id="gallery"
+        class="relative text-white px-4 py-16"
+      >
+        <img
+          src="public/gallery-bg.jpg"
+          alt="baby breath flower green background"
+          loading="lazy"
+          class="absolute inset-0 h-full w-full object-cover"
+        />
+        <div class="relative mx-auto max-w-3xl text-center bg-white/20 p-10">
+          <h2 class="border py-2 text-3xl font-light uppercase">Gallery</h2>
+          <p class="mt-10">Check out some of our latest styles!</p>
           <div
             class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4"
           >
-            <div class="h-40 bg-gray-200"></div>
-            <div class="h-40 bg-gray-200"></div>
-            <div class="h-40 bg-gray-200"></div>
-            <div class="h-40 bg-gray-200"></div>
+            <img
+              src="public/hairstyle-1.jpg"
+              alt="bride hairstyle"
+              loading="lazy"
+            />
+            <img
+              src="public/hairstyle-2.jpg"
+              alt="blonde hair colouring"
+              loading="lazy"
+            />
+            <img
+              src="public/hairstyle-3.jpg"
+              alt="green hair colouring"
+              loading="lazy"
+            />
+            <img
+              src="public/hairstyle-4.jpg"
+              alt="copper hair colouring"
+              loading="lazy"
+            />
+            <img
+              src="public/hairstyle-5.jpg"
+              alt="black curly haircut"
+              class="lg:hidden"
+              loading="lazy"
+            />
+            <img
+              src="public/hairstyle-6.jpg"
+              alt="short curly haircut"
+              class="lg:hidden"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>
@@ -239,53 +285,56 @@
       <!-- Contact Section -->
       <section
         id="contact"
-        class="border-b border-black bg-red-500 px-4 py-16 text-white"
+        class="border-b border-black bg-white px-4 py-16 text-black"
       >
-        <div class="mx-auto max-w-7xl text-center">
-          <h2 class="text-3xl font-bold">Contact Us</h2>
-          <p>Get in touch for bookings or inquiries</p>
-          <form class="mt-8 space-y-4">
-            <input
-              type="text"
-              placeholder="Name"
-              class="w-full rounded border-2 border-black p-2"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              class="w-full rounded border-2 border-black p-2"
-            />
-            <textarea
-              placeholder="Message"
-              class="w-full rounded border-2 border-black p-2"
-            ></textarea>
-            <button
-              type="submit"
-              class="rounded bg-green-500 px-6 py-2 text-white"
+        <div class="mx-auto max-w-3xl text-center">
+          <h2 class="border py-2 text-3xl font-light tracking-wide uppercase">
+            Contact Us
+          </h2>
+          <p class="mt-10 text-lg text-gray-600">
+            <span class="block"> Reach us on our social media.</span>
+            <span class="block"
+              >Give us a call at
+              <span class="font-semibold">+1 (555) 123-4567</span></span
             >
-              Submit
-            </button>
-          </form>
+            Or email us directly.
+          </p>
+          <div class="mt-6">
+            <a
+              href="mailto:hello@yourwebsite.com"
+              class="inline-block rounded-lg border border-black bg-black px-6 py-3 text-lg font-semibold text-white transition hover:bg-white hover:text-black"
+            >
+              Mail Us
+            </a>
+          </div>
         </div>
       </section>
 
       <!-- Follow Us Section -->
-      <section
-        id="social"
-        class="border-b border-black bg-white px-4 py-16 text-center"
-      >
-        <h2 class="text-3xl font-bold text-red-500">Follow Us</h2>
-        <div class="mt-4 flex justify-center space-x-4">
-          <a href="#" class="text-xl text-black">Facebook</a>
-          <a href="#" class="text-xl text-black">Instagram</a>
-          <a href="#" class="text-xl text-black">Twitter</a>
+      <section id="social" class="bg-white px-4 py-16 text-center">
+        <div class="mx-auto max-w-3xl text-center">
+          <h2 class="border py-2 text-3xl font-light uppercase">Follow Us</h2>
+          <div class="mt-10 flex justify-center space-x-5">
+            <a href="#" class="text-xl text-black">Facebook</a>
+            <a href="#" class="text-xl text-black">Instagram</a>
+            <a href="#" class="text-xl text-black">Twitter</a>
+          </div>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer class="mt-16 bg-black py-4 text-center text-white">
-      <p>&copy; 2025 Hair Salon. All Rights Reserved.</p>
+    <footer class="bg-black py-4 text-center text-white">
+      <p>
+        &copy; 2025 The Hair Lab |
+        <a
+          class="italic underline"
+          target="_blank"
+          href="https://www.instagram.com/sunnycc17_/"
+        >
+          by sunny</a
+        >. All Rights Reserved.
+      </p>
     </footer>
 
     <!-- Script to toggle sidebar -->
