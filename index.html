@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hair Salon</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body class="bg-white border-black">
+    <!-- Fixed Header -->
+    <header class="bg-black text-white fixed w-full top-0 left-0 z-10">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-semibold">Hair Salon</h1>
+        <button id="hamburger" class="lg:hidden text-white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div
+      id="sidebar"
+      class="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-20 hidden"
+    >
+      <div class="flex justify-end p-4">
+        <button id="close-sidebar" class="text-white text-2xl">X</button>
+      </div>
+      <nav class="flex flex-col items-center space-y-6 text-white">
+        <a href="#home" class="px-4 py-2">Home</a>
+        <a href="#about" class="px-4 py-2">About Us</a>
+        <a href="#services" class="px-4 py-2">Services</a>
+        <a href="#gallery" class="px-4 py-2">Gallery</a>
+        <a href="#contact" class="px-4 py-2">Contact</a>
+        <a href="#social" class="px-4 py-2">Follow Us</a>
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="mt-20">
+      <!-- Home Section -->
+      <section
+        id="home"
+        class="py-16 px-4 border-b border-black bg-red-500 text-white"
+      >
+        <div class="max-w-7xl mx-auto text-center">
+          <h2 class="text-3xl font-bold">Welcome to Our Hair Salon</h2>
+          <p>Your beauty, our passion</p>
+        </div>
+      </section>
+
+      <!-- About Us Section -->
+      <section id="about" class="py-16 px-4 border-b border-black bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-red-500">About Us</h2>
+          <p>
+            We are experts in hair care and styling. Let us bring out your best
+            look!
+          </p>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section
+        id="services"
+        class="py-16 px-4 border-b border-black bg-green-500 text-white"
+      >
+        <div class="max-w-7xl mx-auto text-center">
+          <h2 class="text-3xl font-bold">Our Services</h2>
+          <ul class="space-y-4 mt-4">
+            <li>Haircuts</li>
+            <li>Coloring</li>
+            <li>Styling</li>
+            <li>Hair Treatments</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="py-16 px-4 border-b border-black bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-green-500">Gallery</h2>
+          <p>Check out some of our latest styles!</p>
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-8"
+          >
+            <div class="bg-gray-200 h-40"></div>
+            <div class="bg-gray-200 h-40"></div>
+            <div class="bg-gray-200 h-40"></div>
+            <div class="bg-gray-200 h-40"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section
+        id="contact"
+        class="py-16 px-4 border-b border-black bg-red-500 text-white"
+      >
+        <div class="max-w-7xl mx-auto text-center">
+          <h2 class="text-3xl font-bold">Contact Us</h2>
+          <p>Get in touch for bookings or inquiries</p>
+          <form class="mt-8 space-y-4">
+            <input
+              type="text"
+              placeholder="Name"
+              class="p-2 w-full border-2 border-black rounded"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              class="p-2 w-full border-2 border-black rounded"
+            />
+            <textarea
+              placeholder="Message"
+              class="p-2 w-full border-2 border-black rounded"
+            ></textarea>
+            <button
+              type="submit"
+              class="px-6 py-2 bg-green-500 text-white rounded"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Follow Us Section -->
+      <section
+        id="social"
+        class="py-16 px-4 bg-white text-center border-b border-black"
+      >
+        <h2 class="text-3xl font-bold text-red-500">Follow Us</h2>
+        <div class="flex justify-center space-x-4 mt-4">
+          <a href="#" class="text-xl text-black">Facebook</a>
+          <a href="#" class="text-xl text-black">Instagram</a>
+          <a href="#" class="text-xl text-black">Twitter</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-4 mt-16 text-center">
+      <p>&copy; 2025 Hair Salon. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Script to toggle sidebar -->
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const sidebar = document.getElementById("sidebar");
+      const closeSidebar = document.getElementById("close-sidebar");
+
+      hamburger.addEventListener("click", () => {
+        sidebar.classList.toggle("hidden");
+      });
+
+      closeSidebar.addEventListener("click", () => {
+        sidebar.classList.add("hidden");
+      });
+    </script>
+  </body>
+</html>
