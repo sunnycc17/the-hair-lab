@@ -8,3 +8,6 @@ banner-1 Photo by Max Vakhtbovycn: https://www.pexels.com/photo/black-shiny-cabi
 
 bride hairstyle
 Photo by Pixabay: https://www.pexels.com/photo/woman-wearing-white-floral-hair-vine-355063/
+
+favicon
+<a target="_blank" href="https://icons8.com/icon/37828/scissors">Scissors</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
