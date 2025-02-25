@@ -367,34 +367,50 @@
         id="social"
         class="relative flex flex-col items-center justify-center bg-white px-4 py-16 text-center"
       >
-        <img
-          src="public/follow.webp"
-          alt="black paint brush stroke"
-          loading="lazy"
-          class="absolute inset-0 h-[300px] w-full object-cover object-center"
-        />
+        <!-- Background Image -->
+        <div class="absolute inset-0 flex justify-center">
+          <img
+            src="public/follow.webp"
+            alt="black paint brush stroke"
+            loading="lazy"
+            class="h-[250px] w-full object-cover object-center sm:h-[300px] lg:h-[350px]"
+          />
+        </div>
+
+        <!-- Semi-transparent overlay box -->
         <div
-          class="absolute flex h-[200px] w-[520px] max-w-xl border-2 bg-white/20 backdrop-blur-xs sm:max-w-4xl"
+          class="absolute h-[180px] w-[90%] max-w-lg border-2 bg-white/20 backdrop-blur-xs sm:h-[200px] sm:max-w-4xl"
         ></div>
 
-        <div class="relative mx-auto max-w-3xl text-center text-black">
-          <h2 class="border py-2 text-3xl font-light uppercase">Follow Us</h2>
-          <div class="mt-10 flex justify-center space-x-5">
+        <!-- Content -->
+        <div
+          class="relative mx-auto flex max-w-lg flex-col items-center justify-center text-black sm:max-w-3xl"
+        >
+          <h2
+            class="max-w-fit border px-5 py-1 text-xl font-light uppercase sm:text-2xl"
+          >
+            Follow Us
+          </h2>
+
+          <!-- Social Buttons -->
+          <div
+            class="mt-10 flex flex-wrap justify-center gap-2 sm:mt-10 sm:gap-4"
+          >
             <a
               href="#"
-              class="brand rounded-lg bg-gradient-to-r from-black to-gray-800 px-4 py-2 text-xl font-semibold text-white shadow-md transition duration-300 hover:scale-105 hover:from-gray-900 hover:to-black"
+              class="brand w-20 rounded-lg bg-gradient-to-r from-black to-gray-800 px-2 py-1 text-sm font-semibold text-white shadow-md transition duration-300 hover:scale-105 hover:from-gray-900 hover:to-black sm:w-auto sm:px-4 sm:py-2 sm:text-lg"
             >
               Facebook
             </a>
             <a
               href="#"
-              class="brand rounded-lg bg-gradient-to-r from-black to-gray-800 px-4 py-2 text-xl font-semibold text-white shadow-md transition duration-300 hover:scale-105 hover:from-gray-900 hover:to-black"
+              class="brand w-20 rounded-lg bg-gradient-to-r from-black to-gray-800 px-2 py-1 text-sm font-semibold text-white shadow-md transition duration-300 hover:scale-105 hover:from-gray-900 hover:to-black sm:w-auto sm:px-4 sm:py-2 sm:text-lg"
             >
               Instagram
             </a>
             <a
               href="#"
-              class="brand rounded-lg bg-gradient-to-r from-black to-gray-800 px-4 py-2 text-xl font-semibold text-white shadow-md transition duration-300 hover:scale-105 hover:from-gray-900 hover:to-black"
+              class="brand w-24 rounded-lg bg-gradient-to-r from-black to-gray-800 px-2 py-1 text-sm font-semibold text-white shadow-md transition duration-300 hover:scale-105 hover:from-gray-900 hover:to-black sm:w-auto sm:px-4 sm:py-2 sm:text-lg"
             >
               Twitter
             </a>
