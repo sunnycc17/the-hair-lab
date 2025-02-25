@@ -365,15 +365,15 @@
       <!-- Follow Us Section -->
       <section
         id="social"
-        class="relative flex flex-col items-center justify-center bg-white px-4 py-16 text-center"
+        class="relative flex flex-col items-center justify-center overflow-hidden bg-white px-4 py-16 text-center"
       >
         <!-- Background Image -->
-        <div class="absolute inset-0 flex justify-center">
+        <div class="absolute inset-0 flex h-full w-full justify-center">
           <img
             src="public/follow.webp"
             alt="black paint brush stroke"
             loading="lazy"
-            class="h-[250px] w-full object-cover object-center sm:h-[300px] lg:h-[350px]"
+            class="h-full w-full object-cover object-center"
           />
         </div>
 
@@ -393,9 +393,7 @@
           </h2>
 
           <!-- Social Buttons -->
-          <div
-            class="mt-10 flex flex-wrap justify-center gap-2 sm:mt-10 sm:gap-4"
-          >
+          <div class="mt-10 flex flex-wrap justify-center gap-2 sm:gap-4">
             <a
               href="#"
               class="brand w-20 rounded-lg bg-gradient-to-r from-black to-gray-800 px-2 py-1 text-sm font-semibold text-white shadow-md transition duration-300 hover:scale-105 hover:from-gray-900 hover:to-black sm:w-auto sm:px-4 sm:py-2 sm:text-lg"
@@ -410,7 +408,7 @@
             </a>
             <a
               href="#"
-              class="brand w-24 rounded-lg bg-gradient-to-r from-black to-gray-800 px-2 py-1 text-sm font-semibold text-white shadow-md transition duration-300 hover:scale-105 hover:from-gray-900 hover:to-black sm:w-auto sm:px-4 sm:py-2 sm:text-lg"
+              class="brand w-20 rounded-lg bg-gradient-to-r from-black to-gray-800 px-2 py-1 text-sm font-semibold text-white shadow-md transition duration-300 hover:scale-105 hover:from-gray-900 hover:to-black sm:w-auto sm:px-4 sm:py-2 sm:text-lg"
             >
               Twitter
             </a>
@@ -420,7 +418,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="relative bg-black py-4 text-center text-white">
+    <footer class="relative bottom-0 bg-black py-4 text-center text-white">
       <p>
         &copy; 2025 The Hair Lab |
         <a
