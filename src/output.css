@@ -890,6 +890,7 @@
   position: absolute !important;
   bottom: 0 !important;
   width: 600px !important;
+  max-width: 90vw !important;
   background: rgba(0, 0, 0, 0.7);
   color: white !important;
   font-size: 16px;
