@@ -30,13 +30,13 @@
 .lb-data {
   position: absolute !important;
   bottom: 0 !important;
-  width: 604px !important; /* Ensure it matches image width */
+  width: 600px !important; /* Ensure it matches image width */
   background: rgba(0, 0, 0, 0.7);
   color: white !important;
-  padding: 10px 15px;
   font-size: 16px;
   text-align: center;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 /* Ensure text inside the caption is centered */
