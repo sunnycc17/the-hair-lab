@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+[x-cloak] {
+  display: none !important;
+}
+
 @keyframes wave {
   0% {
     background-position: 100%;
