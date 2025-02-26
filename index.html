@@ -50,6 +50,10 @@
     <title>The Hair Lab | Hair Salon</title>
     <link rel="stylesheet" href="src/output.css" />
     <script src="//unpkg.com/alpinejs" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+    />
   </head>
   <body class="overflow-x-hidden bg-white">
     <!-- Fixed Header -->
@@ -430,38 +434,79 @@
           <div
             class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4"
           >
-            <img
-              src="public/hairstyle-1.webp"
-              alt="bride hairstyle"
-              loading="lazy"
-            />
-            <img
-              src="public/hairstyle-2.webp"
-              alt="blonde hair colouring"
-              loading="lazy"
-            />
-            <img
-              src="public/hairstyle-3.webp"
-              alt="green hair colouring"
-              loading="lazy"
-            />
-            <img
-              src="public/hairstyle-4.webp"
-              alt="copper hair colouring"
-              loading="lazy"
-            />
-            <img
-              src="public/hairstyle-5.webp"
-              alt="black curly haircut"
-              class="lg:hidden"
-              loading="lazy"
-            />
-            <img
-              src="public/hairstyle-6.webp"
-              alt="short curly haircut"
-              class="lg:hidden"
-              loading="lazy"
-            />
+            <a
+              href="public/hairstyle-1.webp"
+              data-lightbox="hairstyles"
+              data-title="Bride Hairstyle"
+            >
+              <img
+                src="public/hairstyle-1.webp"
+                alt="Bride Hairstyle"
+                loading="lazy"
+              />
+            </a>
+
+            <a
+              href="public/hairstyle-2.webp"
+              data-lightbox="hairstyles"
+              data-title="Blonde Hair Colouring"
+            >
+              <img
+                src="public/hairstyle-2.webp"
+                alt="Blonde Hair Colouring"
+                loading="lazy"
+              />
+            </a>
+
+            <a
+              href="public/hairstyle-3.webp"
+              data-lightbox="hairstyles"
+              data-title="Green Hair Colouring"
+            >
+              <img
+                src="public/hairstyle-3.webp"
+                alt="Green Hair Colouring"
+                loading="lazy"
+              />
+            </a>
+
+            <a
+              href="public/hairstyle-4.webp"
+              data-lightbox="hairstyles"
+              data-title="Copper Hair Colouring"
+            >
+              <img
+                src="public/hairstyle-4.webp"
+                alt="Copper Hair Colouring"
+                loading="lazy"
+              />
+            </a>
+
+            <a
+              href="public/hairstyle-5.webp"
+              data-lightbox="hairstyles"
+              data-title="Black Curly Haircut"
+            >
+              <img
+                src="public/hairstyle-5.webp"
+                alt="Black Curly Haircut"
+                class="lg:hidden"
+                loading="lazy"
+              />
+            </a>
+
+            <a
+              href="public/hairstyle-6.webp"
+              data-lightbox="hairstyles"
+              data-title="Short Curly Haircut"
+            >
+              <img
+                src="public/hairstyle-6.webp"
+                alt="Short Curly Haircut"
+                class="lg:hidden"
+                loading="lazy"
+              />
+            </a>
           </div>
         </div>
       </section>
@@ -562,6 +607,8 @@
     </footer>
 
     <!-- Script to toggle sidebar -->
-    <script></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
   </body>
 </html>

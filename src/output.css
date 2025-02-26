@@ -865,6 +865,35 @@
   background-size: 200% 100%;
   animation: wave 2s linear infinite;
 }
+.lb-image {
+  width: 600px !important;
+  height: 400px !important;
+  object-fit: cover !important;
+  max-width: 90vw !important;
+  max-height: 90vh !important;
+}
+.lb-data {
+  position: absolute !important;
+  bottom: 0 !important;
+  width: 604px !important;
+  background: rgba(0, 0, 0, 0.7);
+  color: white !important;
+  padding: 10px 15px;
+  font-size: 16px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.lb-caption {
+  padding: 15px;
+  display: block;
+  font-weight: lighter !important;
+}
+.lb-number {
+  display: none !important;
+}
+.lb-close {
+  display: none !important;
+}
 @keyframes bounce {
   0%, 100% {
     transform: translateY(-25%);

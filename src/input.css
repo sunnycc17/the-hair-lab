@@ -17,3 +17,40 @@
   background-size: 200% 100%;
   animation: wave 2s linear infinite;
 }
+
+.lb-image {
+  width: 600px !important; /* Adjust width as needed */
+  height: 400px !important; /* Adjust height as needed */
+  object-fit: cover !important; /* Ensures images are cropped evenly */
+  max-width: 90vw !important; /* Makes sure it doesn’t go out of screen */
+  max-height: 90vh !important;
+}
+
+/* Make caption span full width of the image */
+.lb-data {
+  position: absolute !important;
+  bottom: 0 !important;
+  width: 604px !important; /* Ensure it matches image width */
+  background: rgba(0, 0, 0, 0.7);
+  color: white !important;
+  padding: 10px 15px;
+  font-size: 16px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Ensure text inside the caption is centered */
+.lb-caption {
+  padding: 15px;
+  display: block;
+  font-weight: lighter !important;
+}
+/* Completely hide the number label */
+.lb-number {
+  display: none !important;
+}
+
+/* Completely hide the close button */
+.lb-close {
+  display: none !important;
+}
